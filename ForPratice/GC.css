@@ -1,0 +1,163 @@
+h1{
+
+    color: aliceblue;
+    font-family:Helvetica;
+    font-size: 10px;
+    display: flex;
+}
+#myH1{
+    position: relative;
+    left: 98.55%;
+    bottom: 50px;
+}
+#myH2{
+
+    position: relative;
+    left: 97.3%;
+    bottom: 100px;
+
+}
+#myH3{
+    position: relative;
+    left: 96%;
+    bottom: 150px;
+}
+#myH4{
+
+    position: relative;
+    left: 94.6%;
+    bottom: 200px;
+
+}
+
+#myH5{
+    position: relative;
+    left: 93.3%;
+    bottom: 250px;
+}
+#myH6{
+
+    position: relative;
+    left: 92%;
+    bottom: 300px;
+
+}
+
+#myH7{
+   position: relative;
+    left: 90.7%;
+    bottom: 350px;
+}
+#myH8{
+
+    position: relative;
+    left: 89.4%;
+    bottom: 400px;
+
+}
+
+#myH9{
+    position: relative;
+    left: 88.1%;
+    bottom: 450px;
+}
+#myH10{
+
+    position: relative;
+    left: 86%;
+    bottom: 500px;
+
+}
+
+
+
+.graphBar {
+    background-color: bisque;
+    box-shadow: 0 0 10px wheat;
+    width: 50px; 
+    margin: 0 5px; 
+    position: relative;
+    bottom: 0; 
+    transition: 2s;
+    animation: barmovement 1s;
+    right: 200px;
+}
+@keyframes barmovement {
+
+    0%{
+        height: 0px;
+    }
+    
+}
+#label1{
+
+    position: relative;
+    top: 65px;
+    left:492px;
+
+}
+#label2{
+
+    position: relative;
+    top: 65px;
+    left: 472px;
+}
+.box{
+
+    position: relative;
+    top: 100px;
+    left: 230px;
+    height: 40px;
+    margin-left: 100px;
+    background-color: azure;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 10px cyan,
+    0 0 20px cyan;
+
+}
+.box2{
+
+    position: relative;
+    top: 160px;
+    right: 101px;
+    width: 100px;
+    height: 40px;
+
+}
+.box::placeholder{
+
+    text-align: center;
+
+}
+.barGroup {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 5px; 
+}
+
+#graphContainer {
+    top: 180px;
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+    overflow-x: auto; 
+    border-radius: 16px;
+}
+
+.barLabel {
+    color: antiquewhite;
+    align-content: center;
+    margin-top: 5px; 
+    font-size: 10px;
+    width: 10px; 
+    position: relative;
+    white-space: nowrap;
+    right: 200px;
+}
+

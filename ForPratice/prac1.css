@@ -1,0 +1,74 @@
+#Alink{
+
+    color: rgb(0, 113, 133);
+
+}
+
+#Alink:hover{
+
+    color: orange;
+
+}
+
+#Text1{
+
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+#Text2{
+
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+
+}
+
+#Text3{
+
+    font-size: 18px;
+    
+}
+
+#B1{
+
+    background-color: rgb(225, 216, 20);
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+#B1:hover{
+
+    opacity: 75%;
+    cursor: pointer;
+}
+#B1:active{
+
+    opacity: 45%;
+}
+
+#B2{
+
+    background-color: rgb(255, 164, 28);
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+
+}
+
+#B2:hover{
+
+    opacity: 75%;
+    cursor: pointer;
+}
+#B2:active{
+
+    opacity: 45%;
+}

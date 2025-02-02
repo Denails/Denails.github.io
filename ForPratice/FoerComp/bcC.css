@@ -1,0 +1,38 @@
+body{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    transition: 0.5s;
+    animation-name: background12;
+}
+@keyframes background12{
+
+    0%{
+        background-color: white;
+    }
+
+    
+}
+.inputcontainer{
+
+    text-align: center;
+
+
+}
+input[type="range"]{
+
+    width: 300px;
+    margin: 10px 0px;
+
+}
+label{
+
+
+    display: block;
+    margin: 10px 0 5px;
+
+}

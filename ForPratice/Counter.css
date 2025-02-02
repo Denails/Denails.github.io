@@ -1,0 +1,57 @@
+#countLabel{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+}
+
+#btns{
+
+    text-align: center;
+}
+#shape{
+
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 47%;
+    top: 200px;
+    transition: 0.3s;
+}
+@keyframes smooth {
+    0%{
+        border-radius: 0px;
+    }
+    
+    
+}
+button{
+
+    
+    padding: 10px 20px;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
+    color: bisque;
+    background-color: rgb(60, 31, 31);
+    border: navajowhite solid;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+button:hover{
+
+    color: rgb(60, 31, 31);
+    background-color: bisque;
+
+}
+button:active{
+
+    color: azure;
+    background-color: black;
+    border: none;
+    
+
+}

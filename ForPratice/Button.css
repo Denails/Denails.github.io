@@ -1,0 +1,84 @@
+.Margins{
+
+    margin-right: 10px;
+
+}
+
+#Yt{
+
+    background-color: red;
+    color: white;
+    border: none;
+    width: 105px;
+    height: 36px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: opacity 0.15s;
+}
+#Tele{
+
+    background-color: white;
+    color: blue;
+    height: 36px;
+    width: 60px;
+    border-color: blue;
+    border-radius: 2px;
+    border-width: 1.5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.15s, color 0.15s;
+}
+#X{
+
+    background-color: rgb(42, 128, 249);
+    color:white;
+    
+    height: 36px;
+    width: 70px;
+    border: none;
+
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: box-shadow 0.15s;
+    
+
+}
+
+#Yt:hover{
+
+    opacity: 50%;
+}
+
+#Yt:active{
+
+    opacity: 65%;    
+
+}
+
+#Tele:hover{
+
+    background-color: blue;
+
+    color: white;
+
+}
+
+#Tele:active{
+
+    opacity: 65%;    
+
+}
+
+#X:hover{
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+#X:active{
+
+    opacity: 65%;    
+
+}

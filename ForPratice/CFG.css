@@ -1,0 +1,218 @@
+body{
+
+    background-color: rgb(45, 44, 44);
+
+}
+
+#Box1{
+
+
+    left: 115px;
+    top: 40px;
+    background: linear-gradient(135deg,  rgb(243, 210, 149), rgb(150, 144, 144));
+    color: wheat;
+    position: relative;
+    height: 500px;
+    width: 1300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px silver;
+    box-shadow: 0 0 20px rgb(243, 210, 149);
+    box-shadow: 0 0 30px rgb(150, 144, 144);
+
+}
+
+#logo{
+
+    position: relative;
+    width: 130px;
+    bottom: 250px;
+    left: 570px;
+
+
+
+}
+
+.Labels{
+
+    color: black;
+    position: relative;
+
+}
+
+.Inputs{
+
+    width: 260px;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgb(114, 107, 96);
+
+}
+input::placeholder{
+
+    color: white;
+}
+
+.Percent{
+    height: 20px;
+    width:40px;
+    border-radius: 5px;
+    position: relative;
+    border-width: 1px;
+    left: 15px;
+    top: 40px;
+    
+}
+
+.LabelPercent{
+
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+.Text{
+    top: 4px;
+
+    text-align: center;
+    line-height: 12px;
+    position: relative;
+}
+#PercentPrelim{
+
+    top: 20px
+
+}
+#PercentMidterm{
+
+    top: 20px
+
+}
+#PercentPrefinal{
+
+    top: 20px
+
+}
+#PercentFinal{
+
+    top: 20px
+
+}
+
+#Per{
+
+    position: relative;
+    bottom: 110px;
+    left: 355px;
+    top: -60px;
+
+    width: 550px;
+    height: 100px;
+
+    border-radius: 10px;
+
+    background-color: black;
+
+}
+
+#PreLim{
+
+    
+    top: 195px;
+    left: 150px;
+}
+#Midterm{
+
+    
+    top: 330px;
+    left: 150px;
+}
+#Pre-Final{
+
+    
+    top: 135px;
+    left: 860px;
+}
+#Final{
+
+    
+    top: 270px;
+    left: 860px;
+}
+
+#label1{
+
+    top: 195px;
+    left: 150px;
+    
+}
+
+#label2{
+
+    top: 338px;
+    left: -120px;
+    
+}
+
+#label3{
+
+    top: 142px;
+    left: 590px;
+}
+
+#label4{
+
+    top: 281px;
+    left: 590px;
+}
+
+#Submit{
+
+    position: relative;
+
+    height: 40px;
+    width: 100px;
+    border-radius: 0.5rem;
+    padding: 10px 26px ;
+    border: 2px solid rgb(129, 126, 126);
+    transition: all 0.3s;
+    background-color: rgb(160, 136, 99);
+
+    left: 320px;
+    top: 325px;
+
+}
+
+#Submit::after{
+
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background-color: rgb(129, 126, 126);
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+
+
+}
+
+#Submit:hover::after{
+    translate: 0;
+}
+#Submit:hover{
+
+    color: rgb(160, 136, 99);
+    background-color: rgb(129, 126, 126);
+}
+
+
+.Result{
+    top: 30px;
+    left: 60px;
+    background-color: azure;
+    width: 1400px;
+    height: 180px;
+    position: relative;
+    border-radius: 15px;
+}
