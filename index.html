@@ -5,102 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-  
-    <audio id="music" src="music\Mine.mp3"></audio> 
 
-    <div class="music">
-        <div class="img-holde">
-            <img src="images\cover.png">
-        </div>
-        <div class="text">
-            <h2>My Love Mine All Mine</h2>
-            <p>I love this song, because when I started to court you this song was always reminded me of you!</p>
-        </div>
-        <div class="play-icon" onclick="toggleMusic()">
-            <div class="circle">
-
-                <div id="icon" class="triangle"></div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="container">
-    <div class="slider-wrapper">
-        <div class="slider">
-            <img id="slide-1" src="images/pic1.png">
-            <img id="slide-2" src="images/pic2.png">
-            <img id="slide-3" src="images/pic3.png">
-            <img id="slide-4" src="images/pic4.png">
-        </div>
-        <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-        </div>
-    </div>        
-    </section>
-
-    <div class="text-container">
-        <span class="particletext hearts">
-                Happy Birthday Loveeeee!!
-        </span>
-    </div>
-
-    <div class="message">
-        <p>I wish you to have more birthdays to come, and also blessings.<br> Thank you so much for everything love. I loveeeeee youuuu sooo sooo much!!! </p>
-    </div>
-
-
-    <script>
-        const music = document.getElementById("music");
-        const icon = document.getElementById("icon");
-
-    function toggleMusic() {
-        if (music.paused) {
-            music.play();
-            icon.classList.remove("triangle");
-            icon.classList.add("pause");
-        } else {
-            music.pause();
-            icon.classList.remove("pause");
-            icon.classList.add("triangle");
-        }
-    }
-
-    function hearts() {
-    $(".particletext.hearts").each(function () {
-        var heartCount = ($(this).width() / 20) * 1;
-
-        for (var i = 0; i <= heartCount; i++) {
-            var size = $.rnd(60, 120) / 10;
-            var top = $.rnd(20, 80);
-            var left = $.rnd(0, 95);
-            var delay = $.rnd(0, 30) / 10;
-
-            $(this).append('<span class="particle" style="top:' + top + '%; left:' + left + '%; width:' + size + 'px; height:' + size + 'px; animation-delay:' + delay + 's;"></span>');
-        }
-    });
-}
-
-jQuery.rnd = function (m, n) {
-    m = parseInt(m);
-    n = parseInt(n);
-    return Math.floor(Math.random() * (n - m + 1)) + m;
-};
-
-$(document).ready(function () {
-    hearts();
-});
-
-    </script>
-
-
+    <a href="page1.html" id="clickMe">Click Me❤︎</a>
+    
 </body>
 </html>
