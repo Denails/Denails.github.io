@@ -220,34 +220,104 @@ body {
     position: absolute;
     margin-right: 50%;
 }
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+#clickMe{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    margin-top: 25%;
+    margin-left: 50%;
+    border: 3px solid skyblue;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    transition: opacity 0.3s;
+    padding: 4px;
+    text-decoration: none;
+    
+
+
+}
+#clickMe:hover{
+
+    cursor: pointer;
+    opacity: 40%;
+
+}
+@media (max-width: 1200px) {
+    .particletext {
+        font-size: 60px; /* Reduce text size for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .particletext {
+        font-size: 50px;
     }
 
     .music {
-        order: 1; 
-        width: 90%; 
-        margin: 10px 0;
+        margin-left: 5%;
+        margin-bottom: 10%;
     }
 
     .text-container {
-        order: 2;
-        font-size: 18px;
-        margin-top: 10px;
+        margin-left: 10%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .particletext {
+        font-size: 40px;
     }
 
-    .slider-wrapper {
-        order: 3;
-        max-width: 90%;
-        margin-top: 10px;
+    .text-container {
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+
+    .music {
+        width: 200px;
+        padding: 0.8rem;
+    }
+
+    .play-icon {
+        top: 30%;
+        right: 8%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .particletext {
+        font-size: 30px; /* Smaller text for phones */
+    }
+
+    .text-container {
+        padding: 20px 0;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .music {
+        width: 180px;
+        padding: 0.5rem;
+    }
+
+    .play-icon {
+        top: 25%;
+        right: 5%;
     }
 
     .message {
-        order: 4;
-        font-size: 14px;
-        margin-top: 10px;
+        margin-right: 0;
+        text-align: center;
     }
 }
