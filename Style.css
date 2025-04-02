@@ -112,13 +112,12 @@ body {
 }
 
 .container {
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
-
 
 .slider-wrapper {
     position: relative;
@@ -223,31 +222,31 @@ body {
 }
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .music {
-        order: 1; /* Music goes first */
-        width: 90%; /* Full width for small screens */
+        order: 1; 
+        width: 90%; 
         margin: 10px 0;
     }
 
     .text-container {
-        order: 2; /* Text comes next */
+        order: 2;
         font-size: 18px;
         margin-top: 10px;
     }
 
     .slider-wrapper {
-        order: 3; /* Slides next */
+        order: 3;
         max-width: 90%;
         margin-top: 10px;
     }
 
     .message {
-        order: 4; /* Message last */
+        order: 4;
         font-size: 14px;
         margin-top: 10px;
     }
