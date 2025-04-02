@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.music {
+    margin-left: 15%;
+    margin-bottom: 25%;
+    background-color: rgb(36, 36, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 1rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.music img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text {
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+.text p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font: 500;
+    color: gray;
+}
+
+.play-icon {
+    position: absolute;
+    top: 34%;
+    right: 11%;
+    transform: translateY(10px);
+    filter: drop-shadow(0 0.5rem 1rem rgb(0, 0, 0));
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.music:hover .play-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: rgb(50, 233, 50);
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
+
+.pause {
+    width: 12px;
+    height: 18px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pause::before,
+.pause::after {
+    content: "";
+    width: 4px;
+    height: 18px;
+    background: black;
+}
+
+.play-icon:hover .circle {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/16; 
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -075rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    animation: slideMove 12s infinite;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    object-fit: cover; 
+    height: auto;
+}
+@keyframes slideMove {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.text-container {
+    padding: 40px 0;
+    text-align: center;
+    position: absolute;
+    margin-left: 20%;
+    margin-bottom: 40%;
+}
+
+.particletext {
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    color: white;
+}
+
+.particletext.hearts > .particle {
+    position: absolute;
+    background-color: #cc2a5d;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    border-radius: 50%;
+    -webkit-animation: hearts 3s ease-in infinite;
+    animation: hearts 3s ease-in infinite;
+}
+
+.particletext.hearts > .particle:before,
+.particletext.hearts > .particle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #cc2a5d;
+    border-radius: 50%;
+}
+
+.particletext.hearts > .particle:before {
+    transform: translateX(-50%);
+}
+
+.particletext.hearts > .particle:after {
+    transform: translateY(-50%);
+}
+
+@keyframes hearts {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0%) rotate(45deg);
+    }
+    20% {
+        opacity: 0.8;
+        transform: translate(0, -20%) rotate(45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -1000%) rotate(45deg);
+    }
+}
+.message{
+    position: absolute;
+    margin-right: 50%;
+}
