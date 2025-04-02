@@ -246,3 +246,42 @@ body {
     opacity: 40%;
 
 }
+/* Apply styles only for small screens */
+@media (max-width: 768px) {
+    /* Make everything display top to bottom */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Reduce text size for small screens */
+    .text-container {
+        font-size: 20px; /* Adjust based on preference */
+        position: static; /* Remove absolute positioning */
+        margin: 10px 0; /* Add spacing */
+    }
+
+    /* Resize the slider */
+    .slider-wrapper {
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .slider img {
+        height: 250px;
+    }
+
+    /* Adjust music box */
+    .music {
+        width: 90%; /* Make it responsive */
+        margin: 0 auto 20px; /* Add spacing */
+    }
+
+    /* Position message at the bottom */
+    .message {
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
