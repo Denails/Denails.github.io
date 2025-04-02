@@ -10,8 +10,8 @@ body {
     color: white;
     height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .music {
@@ -129,7 +129,7 @@ body {
 
 .slider {
     display: flex;
-    aspect-ratio: 16/16; 
+    aspect-ratio: 16/16;
     scroll-snap-type: x mandatory;
     box-shadow: 0 1.5rem 3rem -075rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
@@ -138,9 +138,10 @@ body {
 
 .slider img {
     flex: 1 0 100%;
-    object-fit: cover; 
+    object-fit: cover;
     height: auto;
 }
+
 @keyframes slideMove {
     0% {
         transform: translateX(0);
@@ -158,6 +159,7 @@ body {
         transform: translateX(0);
     }
 }
+
 .text-container {
     padding: 40px 0;
     text-align: center;
@@ -216,72 +218,83 @@ body {
         transform: translate(0, -1000%) rotate(45deg);
     }
 }
-.message{
+
+.message {
     position: absolute;
     margin-right: 50%;
 }
-#clickMe{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    margin-top: 25%;
-    margin-left: 50%;
-    border: 3px solid skyblue;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    transition: opacity 0.3s;
-    padding: 4px;
-    text-decoration: none;
-    
-
-
-}
-#clickMe:hover{
-
-    cursor: pointer;
-    opacity: 40%;
-
-}
-/* Apply styles only for small screens */
-@media (max-width: 768px) {
-    /* Make everything display top to bottom */
-    .container {
+@media (max-width: 767px) { /* Adjust for phone screens */
+    body {
+        min-height: 100vh;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
-    /* Reduce text size for small screens */
-    .text-container {
-        font-size: 20px; /* Adjust based on preference */
-        position: static; /* Remove absolute positioning */
-        margin: 10px 0; /* Add spacing */
+    .container {
+        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /* Resize the slider */
-    .slider-wrapper {
-        max-width: 300px;
-        margin: 10px auto;
-    }
-
-    .slider img {
-        height: 250px;
-    }
-
-    /* Adjust music box */
     .music {
-        width: 90%; /* Make it responsive */
-        margin: 0 auto 20px; /* Add spacing */
+        width: 40%;
+        margin: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* Position message at the bottom */
-    .message {
-        font-size: 14px;
-        margin-top: 20px;
+    .music img {
+        height: auto;
+    }
+
+    .text {
         text-align: center;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .slider-wrapper {
+        max-width: 60%;
+        margin: 2rem auto;
+    }
+
+    .slider {
+        aspect-ratio: 16/16;
+    }
+
+    .text-container {
+        padding: 2rem 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .particletext {
+        font-size: 30px;
+    }
+
+    .particletext.hearts > .particle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .message {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin-top: 1rem;
+        position: relative;
+
     }
 }
