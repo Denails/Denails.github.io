@@ -220,32 +220,3 @@ body {
     position: absolute;
     margin-right: 50%;
 }
-
-@media (max-width: 768px) {
-    .music {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .slider-wrapper {
-        max-width: 400px;
-    }
-
-    .particletext {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .music {
-        max-width: 200px;
-    }
-
-    .slider-wrapper {
-        max-width: 300px;
-    }
-
-    .particletext {
-        font-size: 30px;
-    }
-}
